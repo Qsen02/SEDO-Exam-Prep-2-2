@@ -10,13 +10,13 @@ pipeline{
 
         stage("Build"){
             steps{
-                bat dotnet build
+                bat "dotnet build"
             }
         }
 
         stage("Test"){
             steps{
-                bat dotnet test
+                bat "dotnet test"
             }
         }
     }
